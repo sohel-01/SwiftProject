@@ -10,3 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
+
+
+var e1 = Employee()
+e1.enterEmpDetails()
+
+print("Emp ID: \(e1.empId!)")
+print("Emp Name : \(e1.empName!)")
