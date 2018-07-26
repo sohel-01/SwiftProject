@@ -8,25 +8,27 @@
 
 import Foundation
 
-class Motorcycle
+class Motorcycle: Vehicle
 {
     var color: String!
-    var typeOfTransmission: String!
+    var insurance: String!
     
-    init() {
+    override init() {
         
     }
     
     func enterMotorcycleDetails() {
         print("Vehicle type of transmission:")
-        self.typeOfTransmission = String(readLine()!)
+        self.insurance = String(readLine()!)
         print("Vehicle Color:")
         self.color = String(readLine()!)
+        print("Vehicle insurance:")
+        self.insurance = String(readLine()!)
     }
     
     func displayMotorcycleDetails()  {
         
-        print("Vehicle type of transmission is: \(self.typeOfTransmission!) \n Vehicle color is: \(self.color!)")
+        print("Vehicle type of transmission is: \(self.insurance!) \n Vehicle color is: \(self.color!) Vehicle has insurance(Yes/No): \(self.insurance!)")
         
     }
     

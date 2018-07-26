@@ -13,8 +13,6 @@ class Vehicle
 {
     var maker: Int!
     var regPlate: String!
-    var typeOfTransmission: String!
-    var color: String!
     
     
     init() {
@@ -28,13 +26,11 @@ class Vehicle
         print("Vehicle regPlate:")
         self.regPlate = String(readLine()!)
         print("Vehicle type of transmission:")
-        self.typeOfTransmission = String(readLine()!)
-        print("Vehicle Color:")
-        self.color = String(readLine()!)
+        
     }
     
     func displayVehicleDetails()  {
-        print("Vehicle maker is: \(self.maker!) \n Vehicle reg plate is: \(self.regPlate!) \n Vehicle type of transmission is: \(self.typeOfTransmission!) \n Vehicle color is: \(self.color!)")
+        print("Vehicle maker is: \(self.maker!) \n Vehicle reg plate is: \(self.regPlate!)")
     
     }
     
