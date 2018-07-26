@@ -17,3 +17,15 @@ e1.enterEmpDetails()
 
 print("Emp ID: \(e1.empId!)")
 print("Emp Name : \(e1.empName!)")
+
+var v1 = Vehicle()
+v1.enterVehicleDetails()
+print(v1.displayVehicleDetails())
+
+var m1 = Motorcycle()
+m1.enterMotorcycleDetails()
+print(m1.displayMotorcycleDetails())
+
+var c1 = Car()
+c1.enterCarDetails()
+print(c1.displayCarDetails())
