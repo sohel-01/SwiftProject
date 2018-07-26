@@ -10,6 +10,8 @@
 		9BACB3B52108F1BD00EBF3A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACB3B42108F1BD00EBF3A9 /* main.swift */; };
 		9BACB3BD21090C6300EBF3A9 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACB3BC21090C6300EBF3A9 /* test.swift */; };
 		9BACB3BF21091AB800EBF3A9 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACB3BE21091AB800EBF3A9 /* Employee.swift */; };
+		9BB3F516210A5E7300B2FD70 /* CommisionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3F515210A5E7300B2FD70 /* CommisionBasedPartTime.swift */; };
+		9BB3F518210A5E8B00B2FD70 /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3F517210A5E8B00B2FD70 /* FixedBasedPartTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 		9BACB3BC21090C6300EBF3A9 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		9BACB3BE21091AB800EBF3A9 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		9BACB3C0210921C300EBF3A9 /* codeTemplate.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = codeTemplate.rtf; sourceTree = "<group>"; };
+		9BB3F515210A5E7300B2FD70 /* CommisionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommisionBasedPartTime.swift; sourceTree = "<group>"; };
+		9BB3F517210A5E8B00B2FD70 /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				9BACB3BE21091AB800EBF3A9 /* Employee.swift */,
+				9BB3F517210A5E8B00B2FD70 /* FixedBasedPartTime.swift */,
+				9BB3F515210A5E7300B2FD70 /* CommisionBasedPartTime.swift */,
 				9BACB3BC21090C6300EBF3A9 /* test.swift */,
 			);
 			path = Entities;
@@ -137,6 +143,8 @@
 			files = (
 				9BACB3B52108F1BD00EBF3A9 /* main.swift in Sources */,
 				9BACB3BF21091AB800EBF3A9 /* Employee.swift in Sources */,
+				9BB3F518210A5E8B00B2FD70 /* FixedBasedPartTime.swift in Sources */,
+				9BB3F516210A5E7300B2FD70 /* CommisionBasedPartTime.swift in Sources */,
 				9BACB3BD21090C6300EBF3A9 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
