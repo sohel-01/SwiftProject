@@ -21,4 +21,13 @@ class CommisionBasedPartTime
         print("earning:")
        self.earning = Double(readLine()!)
 }
+    func setData(commisionPercent: Double!, earning: Double!, commision: Double!)
+    {
+        self.fixedAmount = fixedAmount!
+        self.earning = earning!
+        self.commission = commission!
+    }
+    func calearning(){
+        
+    }
 }

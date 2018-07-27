@@ -19,4 +19,13 @@ class FixedBasedPartTime{
         print("earning:")
        self.earning = Double(readLine()!)
 }
+    func setData(fixedAmount: Double!, earning: Double!)
+    {
+        self.fixedAmount = fixedAmount!
+        self.earning = earning!
+    }
+    func calearning(){
+        
+    }
 }
+
