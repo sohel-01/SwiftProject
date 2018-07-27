@@ -15,6 +15,9 @@
 		9BACB3B52108F1BD00EBF3A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACB3B42108F1BD00EBF3A9 /* main.swift */; };
 		9BACB3BD21090C6300EBF3A9 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACB3BC21090C6300EBF3A9 /* test.swift */; };
 		9BACB3BF21091AB800EBF3A9 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACB3BE21091AB800EBF3A9 /* Employee.swift */; };
+		A3CA8894210BDA5000791A65 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8893210BDA5000791A65 /* Intern.swift */; };
+		A3CA8896210BDA6D00791A65 /* FullTimeEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8895210BDA6D00791A65 /* FullTimeEmployee.swift */; };
+		A3CA8898210BDA8700791A65 /* PartTimeEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CA8897210BDA8700791A65 /* PartTimeEmployee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +43,9 @@
 		9BACB3BC21090C6300EBF3A9 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		9BACB3BE21091AB800EBF3A9 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		9BACB3C0210921C300EBF3A9 /* codeTemplate.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = codeTemplate.rtf; sourceTree = "<group>"; };
+		A3CA8893210BDA5000791A65 /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
+		A3CA8895210BDA6D00791A65 /* FullTimeEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTimeEmployee.swift; sourceTree = "<group>"; };
+		A3CA8897210BDA8700791A65 /* PartTimeEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTimeEmployee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,9 @@
 				9B6F722E210A52590026AD62 /* Vehicle.swift */,
 				9B6F7230210A54B50026AD62 /* Motorcycle.swift */,
 				9B6F7232210A54CC0026AD62 /* Car.swift */,
+				A3CA8893210BDA5000791A65 /* Intern.swift */,
+				A3CA8895210BDA6D00791A65 /* FullTimeEmployee.swift */,
+				A3CA8897210BDA8700791A65 /* PartTimeEmployee.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -151,13 +160,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B866A93210B952A0048BBFC /* FixedBasedPartTime.swift in Sources */,
+				A3CA8894210BDA5000791A65 /* Intern.swift in Sources */,
 				9B6F722F210A52590026AD62 /* Vehicle.swift in Sources */,
 				9B6F7231210A54B50026AD62 /* Motorcycle.swift in Sources */,
 				9B866A91210B94C50048BBFC /* CommisionBasedPartTime.swift in Sources */,
 				9B6F7233210A54CC0026AD62 /* Car.swift in Sources */,
 				9BACB3B52108F1BD00EBF3A9 /* main.swift in Sources */,
 				9BACB3BF21091AB800EBF3A9 /* Employee.swift in Sources */,
+				A3CA8898210BDA8700791A65 /* PartTimeEmployee.swift in Sources */,
 				9BACB3BD21090C6300EBF3A9 /* test.swift in Sources */,
+				A3CA8896210BDA6D00791A65 /* FullTimeEmployee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
