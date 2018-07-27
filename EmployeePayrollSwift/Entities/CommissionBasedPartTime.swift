@@ -23,9 +23,9 @@ class CommisionBasedPartTime
 }
     func setData(commisionPercent: Double!, earning: Double!, commision: Double!)
     {
-        self.fixedAmount = fixedAmount!
+        self.commisionPercent = commisionPercent!
         self.earning = earning!
-        self.commission = commission!
+        self.commission = commision!
     }
     func calearning(){
         
