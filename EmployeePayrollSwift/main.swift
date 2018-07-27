@@ -8,7 +8,7 @@
 
 import Foundation
 
-print("Welcome to Employee Payroll")
+/*print("Welcome to Employee Payroll")
 print("Press 1 to Create Employee Payroll else to quit")
 let start = Int(readLine()!)
 
@@ -30,7 +30,7 @@ if start == 1{
 }
 else{
     print("Thank you 😉!")
-}
+}*/
 
 
 //var e1 = Employee()
@@ -50,3 +50,13 @@ else{
 //var c1 = Car()
 //c1.enterCarDetails()
 //print(c1.displayCarDetails())
+
+var f1 = FixedBasedPartTime()
+f1.enterEmpDetails()
+print(f1.displayFixedBased())
+
+var c1 = CommisionBasedPartTime()
+c1.enterEmpDetails()
+print(c1.displayCommissionBased())
+
+

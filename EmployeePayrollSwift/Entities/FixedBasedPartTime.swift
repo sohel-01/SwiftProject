@@ -27,5 +27,12 @@ class FixedBasedPartTime{
     func calearning(){
         
     }
+    func displayFixedBased()
+    {
+        print("fixedAmount is: \(self.fixedAmount!) \n earning is: \(self.earning!)")
+    }
 }
+
+
+
 
