@@ -18,8 +18,10 @@ class Motorcycle: Vehicle
     }
     
     func enterMotorcycleDetails() {
-        print("Vehicle type of transmission:")
-        self.insurance = String(readLine()!)
+        print("Vehicle Maker")
+        self.maker = Int(readLine()!)
+        print("Vehicle reg plate")
+        self.regPlate = String(readLine()!)
         print("Vehicle Color:")
         self.color = String(readLine()!)
         print("Vehicle insurance:")
@@ -28,7 +30,7 @@ class Motorcycle: Vehicle
     
     func displayMotorcycleDetails()  {
         
-        print("Vehicle type of transmission is: \(self.insurance!) \n Vehicle color is: \(self.color!) Vehicle has insurance(Yes/No): \(self.insurance!)")
+        print("Vehicle maker is: \(self.maker!) \n Vehicle reg plate is: \(self.regPlate!) \n Vehicle color is: \(self.color!) \n Vehicle has insurance(Yes/No): \(self.insurance!)")
         
     }
     

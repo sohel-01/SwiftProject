@@ -29,10 +29,5 @@ class Vehicle
         
     }
     
-    func displayVehicleDetails()  {
-        print("Vehicle maker is: \(self.maker!) \n Vehicle reg plate is: \(self.regPlate!)")
-    
-    }
-    
 }
 
