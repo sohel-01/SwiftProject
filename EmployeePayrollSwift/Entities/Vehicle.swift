@@ -11,7 +11,7 @@ import Foundation
 class Vehicle
     
 {
-    var maker: Int!
+    var maker: String!
     var regPlate: String!
     
     
@@ -21,16 +21,14 @@ class Vehicle
     
     func enterVehicleDetails(){
         
-        print("Vehicle maker:")
-        self.maker = Int(readLine()!)
-        print("Vehicle regPlate:")
-        self.regPlate = String(readLine()!)
-        print("Vehicle type of transmission:")
-        
+//        print("Vehicle maker:")
+//        self.maker = Int(readLine()!)
+//        print("Vehicle regPlate:")
+//        self.regPlate = String(readLine()!)
     }
     
     func displayVehicleDetails()  {
-        print("Vehicle maker is: \(self.maker!) \n Vehicle reg plate is: \(self.regPlate!)")
+        print("")
     
     }
     

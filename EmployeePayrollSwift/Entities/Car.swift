@@ -21,18 +21,20 @@ class Car: Vehicle
     }
     
     func enterCarDetails() {
-        print("Vehicle type of transmission:")
+        print("Car Manufacturer :")
+        self.maker = String(readLine()!)
+        print("Car License Plate :")
+        self.regPlate = String(readLine()!)
+        print("Do Car has Automatic or Manual Gear System:")
         self.typeOfTransmission = String(readLine()!)
         print("Vehicle Color:")
         self.color = String(readLine()!)
-        print("Vehicle insurance:")
+        print("Vehicle Insurance (Yes/No):")
         self.insurance = String(readLine()!)
     }
     
-    func displayCarDetails()  {
-        
-        print("Vehicle type of transmission is: \(self.typeOfTransmission!) \n Vehicle color is: \(self.color!) \n Vehicle has insurance(Yes/No): \(self.insurance!)")
-        
+    func displayCarDetails(maker: String,regPlate: String,typeOfTransmission: String,color: String,insurance: String)  {
+        print("Car Manufacturer is: \(maker)\t\tCar License Plate is: \(regPlate)\nCar Gear System is: \(typeOfTransmission)\t\tCar Color is: \(color)\nCar has Insurance(Yes/No): \(insurance)")
     }
     
 }

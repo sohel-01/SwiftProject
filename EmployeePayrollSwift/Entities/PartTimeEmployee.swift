@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class PartTime :Employee
+{
+    var rate : Int!
+    var hours : Int!
+    
+    override init(){
+        
+    }
+}

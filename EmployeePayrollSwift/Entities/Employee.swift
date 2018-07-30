@@ -13,31 +13,19 @@ class Employee{
     var empName : String!
     var empAge : Int!
     var dateOfBirth : String!
-    var salary : Double!
     
     
     init(){
         
     }
     
-    func enterEmpDetails(){
-        print("Emp ID:")
-        self.empId = Int(readLine()!)
-        print("Emp Name:")
-        self.empName = String(readLine()!)
-        print("Enter Date of Birth(DD-MM-YYYY) :")
-        self.dateOfBirth = String(readLine()!)
-        
-    }
-    func calAge(dateOfBirth :String)->Int{
+    func calAge(){
         let dateFormater = DateFormatter()
-        dateFormater.dateFormat = "MM-dd-YYYY"
-        let birthDate = dateFormater.date(from: dateOfBirth)
+        dateFormater.dateFormat = "DD-MM-YYYY"
+        let birthDate = dateFormater.date(from: self.dateOfBirth)
         let calender : NSCalendar! = NSCalendar(calendarIdentifier: .gregorian)
         let now = Date()
         let calAge = calender.components(.year, from: birthDate!, to: now, options: [])
-        let birthYear = calAge.year
         self.empAge = calAge.year
-        return birthYear!
     }
 }
