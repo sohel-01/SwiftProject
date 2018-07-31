@@ -11,12 +11,11 @@ import Foundation
 class FullTime : Employee, IPrintable{
     var salary: Double!
     var bonus: Double!
-    var Totalsalary: Double!
     let line = String(repeating: "*", count: 50)
     override init() {
         }
     func calcToEarning (){
-        Totalsalary =  self.salary + self.bonus
+        totalSalary =  salary + bonus
         }
     func enterFTEDetails(){
         print("Emp ID:")
@@ -30,22 +29,24 @@ class FullTime : Employee, IPrintable{
         self.salary = Double(readLine()!)
         print("Enter Bonus : ")
         salary = Double(readLine()!)
-        print("\(empName) has Vehicle :1.Car 🚘\n2.MotorCycle 🏍\n3.No 😌")
+        print("\(empName!) has Vehicle :1.Car 🚘\n2.MotorCycle 🏍\n3.No 😌")
         let vehSel = Int(readLine()!)
         if vehSel == 1{
-            let ftC = Car()
-            ftC.enterCarDetails()
+            let car = Car()
+            car.enterCarDetails()
             print(line)
+            vehicle = car
             employeePrintableDetails()
-            ftC.displayCarDetails(maker: ftC.maker, regPlate: ftC.regPlate, typeOfTransmission: ftC.typeOfTransmission, color: ftC.color, insurance: ftC.insurance)
+            car.displayVehicleDetails()
             
         }
         else if vehSel == 2{
-            let ftM = Motorcycle()
-            ftM.enterMotorcycleDetails()
+            let motorCycle = Motorcycle()
+            motorCycle.enterMotorcycleDetails()
             print(line)
+            vehicle = motorCycle
             employeePrintableDetails()
-            ftM.displayMotorcycleDetails(maker: ftM.maker, regPlate: ftM.regPlate, color: ftM.color, insurance: ftM.insurance)
+            motorCycle.displayVehicleDetails()
             print(line)
         }
         else if vehSel == 3{
@@ -55,7 +56,8 @@ class FullTime : Employee, IPrintable{
         }
     }
     
-    func employeePrintableDetails(){
-        print("Employee ID : \(empId!)\t\tEmployee Name : \(empName!)\nAge : \(empAge!)Yrs\t\tDate of Birth(DD-MM-YY) : \(dateOfBirth!)\t\tEmployee Basic Salary CAD:\(salary!)\nEmployee Bonus CAD:\(bonus!)\t\tEmployee Total Earnings CAD: \(Totalsalary!)")
+  override func employeePrintableDetails(){
+        print("Employee ID : \(empId!)\t\tEmployee Name : \(empName!)\nAge : \(empAge!)Yrs\t\tDate of Birth(DD-MM-YY) : \(dateOfBirth!)\t\tEmployee Basic Salary CAD:\(salary!)\nEmployee Bonus CAD:\(bonus!)\t\tEmployee Total Earnings CAD: \(totalSalary!)")
+            vehicle!.displayVehicleDetails()
         }
 }

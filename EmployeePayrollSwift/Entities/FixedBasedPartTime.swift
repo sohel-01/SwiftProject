@@ -10,7 +10,7 @@ import Foundation
 class FixedBasedPartTime : PartTime, IPrintable{
     var fixedAmount: Double!
     var salary: Double!
-    var totalSalary : Double!
+//    var totalSalary : Double!
     let line = String(repeating: "*", count: 50)
     override init(){
         
@@ -33,20 +33,24 @@ class FixedBasedPartTime : PartTime, IPrintable{
         print("\(empName) has Vehicle,Select👇🏿\n1.Car 🚘\n2.MotorCycle 🏍\n3.No 😌")
         let vehSel = Int(readLine()!)
         if vehSel == 1{
-            let ftC = Car()
-            ftC.enterCarDetails()
+            let car = Car()
+            car.enterCarDetails()
             print(line)
+            vehicle = car
             employeePrintableDetails()
-            ftC.displayCarDetails(maker: ftC.maker, regPlate: ftC.regPlate, typeOfTransmission: ftC.typeOfTransmission, color: ftC.color, insurance: ftC.insurance)
+            car.displayVehicleDetails()
             print(line)
+            vehicle = car
         }
         else if vehSel == 2{
-            let ftM = Motorcycle()
-            ftM.enterMotorcycleDetails()
+            let motorCycle = Motorcycle()
+            motorCycle.enterMotorcycleDetails()
             print(line)
+            vehicle = motorCycle
             employeePrintableDetails()
-            ftM.displayMotorcycleDetails(maker: ftM.maker, regPlate: ftM.regPlate, color: ftM.color, insurance: ftM.insurance)
+            motorCycle.displayVehicleDetails()
             print(line)
+            vehicle = motorCycle
         }
         else if vehSel == 3{
             print(line)
@@ -57,10 +61,11 @@ class FixedBasedPartTime : PartTime, IPrintable{
     
     func calTotalSalary(){
         salary = Double(rate * hours)
-        totalSalary = fixedAmount + salary
+        super.totalSalary = fixedAmount + salary
     }
-    func employeePrintableDetails(){
+    override func employeePrintableDetails(){
         print("Employee ID : \(empId!)\t\tEmployee Name : \(empName!)\t\tAge : \(empAge!)Yrs\nDate of Birth(DD-MM-YY) : \(dateOfBirth!)\t\tEmployee Worked :\(hours)Hours\nEmployee Rate per Hour :\(rate)CA$\t\tEmployee Monthly Salary CAD: \(salary!)\nEmployee Fixed Commission CAD:\(fixedAmount!)\t\tEmployee Total Earnings CAD: \(totalSalary!)")
+        vehicle!.displayVehicleDetails()
         }
 }
 

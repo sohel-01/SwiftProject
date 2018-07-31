@@ -16,4 +16,5 @@ class PartTime :Employee
     override init(){
         
     }
+    override func employeePrintableDetails(){}
 }

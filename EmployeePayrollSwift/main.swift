@@ -13,6 +13,7 @@ print("Press 1 to Create Employee Payroll else to quit")
 let start0 = Int(readLine()!)
 var start = 1
 var employees = Array<Employee>()
+
 var end = 10
 if start0 == 1{
     while start < end {
@@ -56,5 +57,10 @@ else{
     print("Thank you 😉!")
 }
 print("Thank You for using our PayRoll System and Below are the Employee(s) PayRoll You have Created. ")
-//print(employees)
-
+print(employees)
+var total = 0.0
+for n in employees{
+    n.employeePrintableDetails()
+    total += n.totalSalary
+}
+print("Total PayRoll is : \(total)")

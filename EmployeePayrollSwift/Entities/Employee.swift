@@ -13,7 +13,8 @@ class Employee{
     var empName : String!
     var empAge : Int!
     var dateOfBirth : String!
-    
+    var totalSalary : Double!
+    var vehicle : Vehicle!
     
     init(){
         
@@ -28,4 +29,8 @@ class Employee{
         let calAge = calender.components(.year, from: birthDate!, to: now, options: [])
         self.empAge = calAge.year
     }
+    func employeePrintableDetails(){
+        
+    }
+
 }

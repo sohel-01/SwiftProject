@@ -33,8 +33,8 @@ class Car: Vehicle
         self.insurance = String(readLine()!)
     }
     
-    func displayCarDetails(maker: String,regPlate: String,typeOfTransmission: String,color: String,insurance: String)  {
-        print("Car Manufacturer is: \(maker)\t\tCar License Plate is: \(regPlate)\nCar Gear System is: \(typeOfTransmission)\t\tCar Color is: \(color)\nCar has Insurance(Yes/No): \(insurance)")
+    override func displayVehicleDetails()  {
+        print("Car Manufacturer is: \(maker!)\t\tCar License Plate is: \(regPlate!)\nCar Gear System is: \(typeOfTransmission!)\t\tCar Color is: \(color!)\nCar has Insurance(Yes/No): \(insurance!)")
     }
     
 }

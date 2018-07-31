@@ -11,7 +11,7 @@ class CommisionBasedPartTime : PartTime, IPrintable
 {
     var commisionPercent: Int!
     var salary: Int!
-    var totalSalary : Double!
+//    var totalSalary : Double!
     var commTotal  :Double!
     let line = String(repeating: "*", count: 50)
     override init(){
@@ -35,20 +35,24 @@ class CommisionBasedPartTime : PartTime, IPrintable
         print("\(empName!) has Vehicle :\n1.Car 🚘\n2.MotorCycle 🏍\n3.No 😌")
         let vehSel = Int(readLine()!)
         if vehSel == 1{
-            let ftC = Car()
-            ftC.enterCarDetails()
+            let car = Car()
+            car.enterCarDetails()
             print(line)
+            vehicle = car
             employeePrintableDetails()
-            ftC.displayCarDetails(maker: ftC.maker, regPlate: ftC.regPlate, typeOfTransmission: ftC.typeOfTransmission, color: ftC.color, insurance: ftC.insurance)
+            car.displayVehicleDetails()
             print(line)
+            
         }
         else if vehSel == 2{
-            let ftM = Motorcycle()
-            ftM.enterMotorcycleDetails()
+            let motorCycle = Motorcycle()
+            motorCycle.enterMotorcycleDetails()
             print(line)
+            vehicle = motorCycle
             employeePrintableDetails()
-            ftM.displayMotorcycleDetails(maker: ftM.maker, regPlate: ftM.regPlate, color: ftM.color, insurance: ftM.insurance)
+            motorCycle.displayVehicleDetails()
             print(line)
+            vehicle = motorCycle
         }
         else if vehSel == 3{
             print(line)
@@ -59,10 +63,11 @@ class CommisionBasedPartTime : PartTime, IPrintable
     func calToSalary(){
         salary = rate * hours
         commTotal = Double(salary * commisionPercent/100)
-        totalSalary = Double(salary) + commTotal
+        super.totalSalary = Double(salary) + commTotal
 }
-    func employeePrintableDetails(){
+    override  func employeePrintableDetails(){
         print("Employee ID : \(empId!)\t\tEmployee Name : \(empName!)\nAge : \(empAge!)Yrs\t\tDate of Birth(DD-MM-YY) : \(dateOfBirth!)\nEmployee Worked :\(hours)Hours\t\tEmployee Rate per Hour :\(rate)CA$\nEmployee Commission :\(commisionPercent!)%\t\tEmployee Commission Amout CAD:\(commTotal!)\nEmployee Monthly Basic Salary CAD: \(salary!)\t\tEmployee Total Earnings CAD: \(totalSalary!)")
+        vehicle!.displayVehicleDetails()
     }
     }
 
